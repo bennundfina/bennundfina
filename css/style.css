@@ -7,6 +7,11 @@
     --dark-green: #242b23;
   }
 
+@font-face {
+font-family: 'adelia', serif;
+src: url(/assets/font/adelia.otf);
+}
+
 body{
     font-family: 'Vollkorn', serif;
     font-size: 1.5rem;
