@@ -8,7 +8,7 @@
   }
 
 @font-face {
-font-family: 'adelia', serif;
+font-family: 'adelia';
 src: url(/assets/font/adelia.otf);
 }
 
@@ -20,7 +20,7 @@ body{
 }
 
 h1{
-    font-family: 'adelia', serif;
+    font-family: 'adelia';
     font-size: 4rem;
     margin-bottom: 5%;
     color: var(--olive);
