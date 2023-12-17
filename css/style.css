@@ -16,7 +16,12 @@ body{
     font-family: 'Vollkorn', serif;
     font-size: 1.5rem;
     color: var(--olive);
-    overflow-x: hidden;
+}
+
+.wrapper, html, #ablauf{
+    overflow-x: hidden !important;
+    position: relative;
+    width: 100%;
 }
 
 h1{
@@ -74,6 +79,10 @@ html {
 }
 .padding-5{
     padding: 5%;
+}
+
+.no-padding{
+    padding: 0;
 }
 
 .scroll-padding-10{
@@ -197,7 +206,6 @@ nav a:hover{
     background-image: url(../assets/img/bg-geschichte.png);
     background-size: cover;
     height: 100vh;
-    width: 100vw;
     background-repeat: no-repeat;
 }
 
@@ -218,6 +226,11 @@ footer a:hover{
     text-decoration-thickness: 2px;
     text-underline-offset: 0.5rem;
     text-decoration-color: var(--gold);
+}
+
+footer img{
+    width: 100%;
+    margin-top: -5%;
 }
 
 
@@ -258,12 +271,13 @@ footer a:hover{
 }
 
 @media (max-width:1200px ){
+
     h1 {
-        font-size: 3rem;
+        font-size: 1.7rem;
         margin-bottom: 10%;
     }
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     body {
         font-size: 1.2rem;
@@ -291,6 +305,15 @@ footer a:hover{
     .hide-mobile{
         display: none;
     } 
+
+    .img-main{
+        height: auto;
+        width: 80%;
+    }
+
+    button {
+        font-size: 1rem;
+    }
 
 }
 
