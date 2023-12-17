@@ -20,7 +20,7 @@
     <div class="row hide-mobile">
         <div class="col-12 fixed-top white-background">
             <nav class="row align-items-center justify-content-center text-center">
-                <div class="col-8">
+                <div class="col-12 col-md-12 col-lg-10 col-xl-8">
                     <div class="row align-items-center">
                         <a class="col" href="#welcome-scroll"><p>Willkommen</p></a>
                         <a class="col" href="#ablauf-scroll"><p>Ablauf</p></a>
@@ -68,47 +68,76 @@
                 </div>
                 <!--ABLAUF-->
                 <div id="ablauf" class="row align-items-center justify-content-center text-center sage-background padding-5 white margin--bottom ">
-                        <h2 id="ablauf-scroll" class="col-12 white">Ablauf</h2>
-                        
-                        <div class="col-12 col-md-3 margin-bottom-mobile">
-                            <img src="assets/img/icon-empfang.png" alt="Empfang">
-                            <div class="circle mx-auto margin-bottom"></div>
-                            <p>14:00 <br>Empfang</p>
+                        <h2 id="ablauf-scroll" class="col-12 white margin-top-mobile">Ablauf</h2>
+
+                        <div class="col-lg-10 hide-mobile">
+                            <div class="row justify-content-between" style="margin-top: -0.7%;">
+                                <div class="col-lg-3">
+                                    <img src="assets/img/icon-empfang.png" alt="Empfang">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="assets/img/icon-essen.png" alt="Essen">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="assets/img/icon-party.png" alt="Party">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="assets/img/icon-ende.png" alt="Ende">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-3 margin-bottom-mobile">
-                            <img src="assets/img/icon-essen.png" alt="Essen">
-                            <div class="circle mx-auto margin-bottom"></div>
-                            <p>16:00 <br>Essen</p>
+
+                        <div class="col-lg-10 timeline hide-mobile margin-top">
+                            <div class="row justify-content-between" style="margin-top: -0.7%;">
+                                <div class="col-lg-3">
+                                    <div class="circle mx-auto margin-bottom"></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="circle mx-auto margin-bottom"></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="circle mx-auto margin-bottom"></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="circle mx-auto margin-bottom"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-3 margin-bottom-mobile">
-                            <img src="assets/img/icon-party.png" alt="Party">
-                            <div class="circle mx-auto margin-bottom"></div>
-                            <p>18:00 <br>Party</p>
-                            
+
+                        <div class="col-lg-10 margin-top">
+                            <div class="row justify-content-between" style="margin-top: -0.7%;">
+                                <div class="col-lg-3">
+                                    <img class="hide-dektop margin-bottom" src="assets/img/icon-empfang.png" alt="Empfang">
+                                    <p class="margin--bottom">14:00 <br>Empfang</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="hide-dektop margin-bottom" src="assets/img/icon-essen.png" alt="Essen">
+                                    <p class="margin--bottom">16:00 <br>Essen</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="hide-dektop margin-bottom" src="assets/img/icon-party.png" alt="Party">
+                                    <p class="margin--bottom">18:00 <br>Party</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="hide-dektop margin-bottom" src="assets/img/icon-ende.png" alt="Ende">
+                                    <p class="margin--bottom">22:00 <br>Ende</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-3 margin-bottom-mobile">
-                            <img src="assets/img/icon-ende.png" alt="Ende">
-                            <div class="circle mx-auto margin-bottom"></div>
-                            <p>22:00 <br>Ende</p>
-                        </div>
-                        <div class="col-10 timeline hide-mobile">
-                            
-                        </div>
-                        
                 </div>
                 <!--ANFAHRT-->
                 <div id="anfahrt" class="row align-items-center justify-content-center text-center margin--bottom">
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-lg-8">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-6 text-main">
                                 <h2 id="anfahrt-scroll" class="margin-bottom">Anfahrt</h2>
                                 <p class="margin-bottom">An d. Elfrather Mühle 145,<br>47802 Krefeld</p>
-                                <button
+                                <button class="margin-bottom-mobile"
                                     onclick="window.open('https://www.google.com/maps/dir//An+d.+Elfrather+Mühle+145,+47802+Krefeld/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47b8bb1ac2c46eb5:0x51da1e25963be74b?sa=X&ved=2ahUKEwiovomk64SDAxWKh_0HHT9_BQMQwwV6BAgREAA');">
                                     Details
                                 </button>
                             </div>
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-lg-6">
                                 <img class="img-main"  src="assets/img/muehle.png" alt="Elfrather Mühle">
                             </div>
                         </div>
@@ -118,13 +147,13 @@
                 <div id="dresscode" class="row align-items-center justify-content-center text-center-mobile margin--bottom">
                     <div class="col-10 col-md-8">
                         <div class="row align-items-center justify-content-center">
-                            <div class="col-12 col-md-6 order-md-2 margin-bottom-mobile">
+                            <div class="col-12 col-lg-6 order-lg-2 margin-bottom-mobile">
                                 <h2 id="dresscode-scroll" class="margin-bottom ">Dresscode & Farben</h2>
                                 <p>
-                                    Zwar haben wir keinen Fotografen, der den Tag begleitet, dafür haben wir aber eine Polaroidkamera um einige Bilder zu schießen. Wenn ihr eure Bekleidung dem Thema, das wir für Deko und unsere Outfits ausgewählt haben, angleichen wollt, sind links einige Farbvorschläge. Einen verpflichteten Fabcode gibt es nicht, von weiß würden wir allerdings  abraten. Ob ihr im Anzug, Ballkleid oder Pullover erscheint ist uns egal, Hauptsache ihr fühlt euch wohl!
+                                    Zwar haben wir keinen Fotografen, der den Tag begleitet, dafür haben wir aber eine Polaroidkamera um einige Bilder zu schießen. Wenn ihr eure Bekleidung dem Thema, das wir für Deko und unsere Outfits ausgewählt haben, angleichen wollt, sind links einige Farbvorschläge. Einen verpflichteten Farbcode gibt es nicht, von weiß würden wir allerdings  abraten. Ob ihr im Anzug, Ballkleid oder Pullover erscheint ist uns egal, Hauptsache ihr fühlt euch wohl!
                                 </p>
                             </div>
-                            <div class="col-12 col-md-6 order-md-1">
+                            <div class="col-12 col-lg-6 order-lg-1">
                                 <img class="img-main" src="assets/img/farben.png" alt="Farben">
                             </div>
                         </div>
@@ -134,7 +163,7 @@
                 <div id="geschenke" class="row align-items-center justify-content-start text-center-mobile margin--bottom">
                     <div class="col-12 col-md-8">
                         <div class="row align-items-center justify-content-center">
-                            <div id="geschenke-scroll" class="col-6 col-md-4">
+                            <div id="geschenke-scroll" class="col-8 col-lg-4">
                                 <h2 class="margin-bottom">Geschenke</h2>
                                 <p>Da eine Hochzeit ein kostspieliges Unterfangen ist, würden wir uns vor allem über Geldgeschenke freuen. </p>
                             </div>
@@ -145,16 +174,16 @@
                 <div id="geschichte" class="row align-items-center justify-content-center text-center-mobile margin--bottom">
                     <div class="col-10 col-md-8">
                         <div class="row align-items-center justify-content-center">
-                            <div class="col-12 col-md-6 margin-bottom align-self-center">
+                            <div class="col-12 col-lg-6 margin-bottom align-self-center">
                                 <h2 id="geschichte-scroll" class="margin-bottom">Unsere Geschichte</h2>
                                 <p>Unsere Geschichte begann in der Aula der Schule, zwischen den Klängen des Schul-Chors, als sich unsere Blicke zum ersten Mal trafen. Eine Woche später, nach dem Chor, gab es dann ein erstes Gespräch und nach einem Telefonat bis tief in die Nacht vereinbarten wir ein erstes Date. Es war das darauffolgende Wochenende, das unser Schicksal entschied. Zwischen Lachen und einer epischen Kissenschlacht fand an diesem Tag auch unser erster Kuss statt. Fuck yeah!
                                 <br><br>
                                 Eigentlich wollten wir etwas warten, bis wir unseren Eltern von der Beziehung erzählen. Aber scheinbar haben Eltern für sowas einen siebten Sinn. Elke (Benns Mutter) bat Fina direkt am Abendessen teilzunehmen und als es Zeit war, nach Hause zu fahren, konnte Andrea (Finas Mutter) ihr die Neuigkeiten direkt am Gesicht ablesen.
                                 <br><br>
-                                Narzissen erblühten überall in dieser Zeit und begleiteten so die Reise als stille Zeugen unserer Liebe. Es dauerte nicht lange, bis wir beschlossen zusammenzuziehen und auch nach einem halben Jahr entschieden wir uns dazu unsere kleine Familie zu erweitern, indem wir unsere ersten Katzen zu uns holten und mit ihnen ein Zuhause voller Wärme zu schaffen.
+                                Narzissen erblühten überall in dieser Zeit und begleiteten so die Reise als stille Zeugen unserer Liebe. Es dauerte nicht lange, bis wir beschlossen zusammenzuziehen und nach einem halben Jahr entschieden wir uns dazu, unsere kleine Familie zu erweitern, indem wir unsere ersten Katzen holten und mit ihnen ein Zuhause voller Wärme schafften.
                                 </p>
                             </div>
-                            <div class="col-12 col-md-6 align-self-center text-center">
+                            <div class="col-12 col-lg-6 align-self-center text-center">
                                 <img class="img-main" src="assets/img/narzissen.png" alt="Narzissen">
                             </div>
                         </div>
@@ -166,11 +195,11 @@
                     <img src="assets/img/watercolor-footer.png" >
                 </div>
                 <div class="col-6">
-                    <div class="row padding-5">
-                        <a class="col" data-bs-toggle="modal" data-bs-target="#kontakt">
+                    <div class="row padding-5 margin-bottom-mobile">
+                        <a class="col" data-bs-toggle="modal" data-bs-target="#kontakt" onclick="document.getElementById('modal-1').classList.remove('hidden');">
                             <p>Kontakt</p>
                         </a>
-                        <a class="col" data-bs-toggle="modal" data-bs-target="#credits">
+                        <a class="col" data-bs-toggle="modal" data-bs-target="#credits" onclick="document.getElementById('modal-2').classList.remove('hidden');">
                             <p>Credits</p>
                         </a>
                     </div>
@@ -182,34 +211,57 @@
 
     
   <!-- Modal 1 -->
-  <div class="modal fade" id="kontakt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content white-background padding-5">
-            <h2 class="margin-bottom">Kontakt</h2>
-            <p>
-                Fina Asshauer & Benn Bongaertz <br>
-                Leutweinstraße 9<br>
-                40593 Düsseldorf
-            </p>
-        </div>
-    </div>
-  </div>
-
-    <!-- Modal 2-->
-    <div class="modal fade" id="credits" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content white-background padding-5">
-                <h2 class="margin-bottom">Danke!</h2>
-                <p>Schriftart für unsere Namen: <a href="https://www.dafont.com/adelia-3.font" target="_blank" >Adelia</a></p>
-                <p>Wasserfarben-Bild: <a href="https://app.recraft.ai/project/136bf21b-d5f1-49fb-862e-65de3f70519e" target="_blank">AI Tool Recraft</a></p>
-                <p>Icons: Handgezeichnet von mir</p>
-                <p>Mühle: <a href="https://www.opentable.com/r/restaurant-elfrather-muhle-krefeld" target="_blank">Google</a> :D</p>
-                <p>Tischdeko mit Farben: Image by <a href="https://www.freepik.com/free-photo/wedding-table-number-decoration_27302562.htm" target="_blank">Freepik</a></p>
-                <p>Geschenke und Ringe: Image by <a href="https://www.freepik.com/free-photo/wrapped-gift-boxes-with-baby-s-breath-flowers-tag-with-candles-scissor-wedding-rings_3434346.htm#query=wedding%20gift&position=26&from_view=search&track=ais&uuid=bd0157fc-8ad0-4ad8-b38a-f3394e5514c8" target="_blank">Freepik</a></p>
-                <p>Schriftart für unsere Namen: Foto von<a href="https://www.pexels.com/de-de/foto/liebe-sommer-sonne-blatt-16516740/" target="_blank" >Liana Horodetska</a></p>
+    <div id="modal-1" class="overlayer hidden">
+        <div class="row align-items-center justify-content-center padding-top">
+            <div class="col-10 text-end" >
+                <button class="btn-close" aria-label="Close" onclick="document.getElementById('modal-1').classList.add('hidden');"></button>
+            </div>
+            <div class="col-8 ">
+                <div class="row padding-5">
+                    <div class="col-9 col-lg-6">
+                        <div class="row">
+                            <div class="col-12 margin-bottom"><h2 >Kontakt</h2></div>
+                            <div class="col-12 col-md-6">
+                                <p>
+                                    Fina Asshauer &<br> Benn Bongaertz<br><br>
+                                    Leutweinstraße 9, <br> 40593 Düsseldorf
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-6 padding--top-mobile">
+                                <p>
+                                    Telefonnummer: <a href="tel:015156192449">015156192449</a><br><br>
+                                    E-Mail: <br>
+                                    <a href="mailto:fina.asshauer@gmail.com">fina.asshauer@gmail.com</a><br>
+                                    <a href="mailto:benno.bongaertz@gmail.com">benno.bongaertz@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
+    </div>
+
+<!-- Modal 2 -->
+<div id="modal-2" class="overlayer hidden">
+    <div class="row align-items-center justify-content-center padding-top">
+        <div class="col-10 text-end" >
+            <button class="btn-close" aria-label="Close" onclick="document.getElementById('modal-2').classList.add('hidden');"></button>
+        </div>
+        <div class="col-10 col-lg-8">
+            <div class="row padding-5">
+                <h2 class="margin-bottom">Danke!</h2>
+                <p class="margin-top-mobile">Schriftart für unsere Namen: <a href="https://www.dafont.com/adelia-3.font" target="_blank" >Adelia</a></p>
+                <p class="margin-top-mobile">Wasserfarben-Bild: <a href="https://app.recraft.ai/project/136bf21b-d5f1-49fb-862e-65de3f70519e" target="_blank">AI Tool Recraft</a></p>
+                <p class="margin-top-mobile">Icons: Handgezeichnet von Fina</p>
+                <p class="margin-top-mobile">Mühle: <a href="https://www.opentable.com/r/restaurant-elfrather-muhle-krefeld" target="_blank">Google</a> :D</p>
+                <p class="margin-top-mobile">Tischdeko mit Farben: Image by <a href="https://www.freepik.com/free-photo/wedding-table-number-decoration_27302562.htm" target="_blank">Freepik</a></p>
+                <p class="margin-top-mobile">Geschenke und Ringe: Image by <a href="https://www.freepik.com/free-photo/wrapped-gift-boxes-with-baby-s-breath-flowers-tag-with-candles-scissor-wedding-rings_3434346.htm#query=wedding%20gift&position=26&from_view=search&track=ais&uuid=bd0157fc-8ad0-4ad8-b38a-f3394e5514c8" target="_blank">Freepik</a></p>
+                <p class="margin-top-mobile">Schriftart für unsere Namen: Foto von <a href="https://www.pexels.com/de-de/foto/liebe-sommer-sonne-blatt-16516740/" target="_blank" >Liana Horodetska</a></p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script

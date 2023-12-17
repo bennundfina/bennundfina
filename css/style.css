@@ -108,9 +108,23 @@ html {
     text-align: center;
 }
 
+.text-end{
+    text-align: end;
+}
+
+a{
+    color: var(--rose);
+    text-decoration: underline;
+}
+
 /* BILDER */
 .img-main{
     height: 75vh;
+}
+
+.hidden{
+    transform: translate(2s);
+    display: none !important;
 }
 
 
@@ -132,6 +146,10 @@ nav a:hover{
     text-decoration-color: var(--gold);
 }
 
+.fixed-top {
+    z-index: 2;
+}
+
 /* HERO */
 
 #hero{
@@ -146,7 +164,7 @@ nav a:hover{
 
 #brautpaar{
     position: relative;
-    z-index: 10;
+    z-index: 1;
     width: 50%;
     margin-bottom: -10%;
 }
@@ -157,8 +175,6 @@ nav a:hover{
     height: 2px;
     background-color: white;
     position: relative;
-    margin-top: -9%;
-    width: 76%;
 }
 
 .circle{
@@ -169,7 +185,7 @@ nav a:hover{
 }
 
 #ablauf img{
-    max-height: 15rem;
+    max-height: 12rem;
 }
 
 /* ANFAHRT */
@@ -179,7 +195,10 @@ nav a:hover{
 
 #geschenke{
     background-image: url(../assets/img/bg-geschichte.png);
+    background-size: cover;
     height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
 }
 
 
@@ -202,7 +221,28 @@ footer a:hover{
 }
 
 
-@media (max-width:700px ){
+/* MODAL */
+
+.overlayer{
+    z-index: 3;
+    position: -webkit-fixed;
+    position: fixed;
+    top: 0;
+    background-color: white ;
+    color: var(--dark-green);
+    height: 100vh;
+    width: 100vw;
+}
+.overlayer h2{
+    color: var(--dark-green);
+}
+
+.btn-close {
+    --bs-btn-close-color: #000;
+    --bs-btn-close-focus-shadow: 0 0 0 0rem rgba(13, 110, 253, 0);
+}
+
+@media (max-width:770px ){
     .hide-mobile{
         display: none;
     } 
@@ -210,12 +250,54 @@ footer a:hover{
     #brautpaar{
         margin-bottom: 0%;
     }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width:1200px ){
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 10%;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    body {
+        font-size: 1.2rem;
+    }
+
     .margin-bottom-mobile{
         margin-bottom: 10%;
+    }
+    .margin-top-mobile{
+        margin-top: 5%;
+    }
+
+    .margin--top-mobile{
+        margin-top: 10%;
+    }
+
+    .padding--top-mobile{
+        padding-top: 10%;    
     }
 
     .text-center-mobile{
         text-align: center; 
     }
 
+    .hide-mobile{
+        display: none;
+    } 
+
+}
+
+
+
+@media (min-width:1200px ){
+    .hide-dektop{
+        display: none;
+    }
 }
