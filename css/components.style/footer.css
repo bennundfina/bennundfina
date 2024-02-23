@@ -1,0 +1,49 @@
+/* =========== FOOTER ===========*/
+
+footer{
+    color: var(--white);
+}
+
+footer a{
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: var(--gold);
+}
+
+#footer-background:before{
+    content: url(../assets/img/watercolor-footer.png);
+    display: block;
+    position: absolute;
+    margin-top: 0%;
+    width: 100%;
+}
+
+/* =========== MODAL ===========*/
+
+.overlayer{
+    z-index: 3;
+    position: -webkit-fixed;
+    position: fixed;
+    top: 0;
+    background-color: white ;
+    color: var(--dark-green);
+    height: 100vh;
+    width: 100vw;
+}
+.overlayer h2{
+    color: var(--dark-green);
+}
+
+.btn-close {
+    --bs-btn-close-color: #000;
+    --bs-btn-close-focus-shadow: 0 0 0 0rem rgba(13, 110, 253, 0);
+}
+
+    /* Das ist unfassbar hässlich, alles weg und neu machen

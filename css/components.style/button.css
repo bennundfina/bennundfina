@@ -1,0 +1,23 @@
+/* =========== BUTTONS ===========*/
+
+button{
+    background-color: var(--white);
+    color: var(--olive);
+
+    border-radius: 30px;
+    border: 2px solid var(--olive);
+    padding: 3% 8%;
+    
+    transition: all .25s;
+}
+
+button:hover{
+    color: var(--sage);
+    border-color: var(--sage);
+}
+
+@media (max-width:1200px ){
+    button {
+        font-size: 1rem;
+    }
+}

@@ -1,4 +1,7 @@
+/* =========== VARIABLEN ===========*/
+
 :root {
+    --white: #ffffff;
     --grey: #cdcdcd;
     --gold: #e4ba8f;
     --rose: #e49e8c;
@@ -7,21 +10,18 @@
     --dark-green: #242b23;
   }
 
+
+/* =========== TEXT ===========*/
+
 @font-face {
-font-family: 'adelia';
-src: url(../assets/font/adelia.otf);
-}
+    font-family: 'adelia';
+    src: url(../assets/font/adelia.otf);
+    }
 
 body{
     font-family: 'Vollkorn', serif;
     font-size: 1.5rem;
     color: var(--olive);
-}
-
-.wrapper, html, #ablauf{
-    overflow-x: hidden !important;
-    position: relative;
-    width: 100%;
 }
 
 h1{
@@ -32,6 +32,7 @@ h1{
 }
 
 h2{
+    /* Ich muss mehrfach Schriften angeben damit es funktioniert? da ist was falsch */
     font-family: 'Vollkorn', serif;
     font-variant: small-caps;
     font-size: 3rem;
@@ -39,20 +40,60 @@ h2{
     color: var(--olive);
 }
 
-button{
-    background-color: var(--sage);
-    border-radius: 30px;
-    border: none;
-    padding: 3% 8%;
-    color: white;
-    font-size: 1.7rem;
+a{
+    color: var(--rose);
+    text-decoration: underline;
 }
 
-html {
-    scroll-padding-top: 35vh;
-  }
+p, h1, h2, h3, a {
+    z-index: 3;
+    position: relative;
+}
 
-/* MARGIN */
+
+/* Standard Textauszeichnungen */
+.small-caps{
+    font-variant: small-caps;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.white{
+    color: var(--white);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-end{
+    text-align: end;
+}
+
+
+/* =========== BUTTONS ===========*/
+
+button{
+    background-color: var(--white);
+    color: var(--olive);
+
+    border-radius: 30px;
+    border: 2px solid var(--olive);
+    padding: 3% 8%;
+    
+    transition: all .25s;
+}
+
+button:hover{
+    color: var(--sage);
+    border-color: var(--sage);
+}
+
+
+/* =========== BASIC MARGINS ===========*/
+
 .margin-top{
     margin-top: 5%;
 }
@@ -67,7 +108,8 @@ html {
 }
 
 
-/* PADDING */
+/* =========== BASIC PADDING ===========*/
+
 .padding-top{
     padding-top: 5%;
 }
@@ -77,76 +119,54 @@ html {
 .padding-bottom{
     padding-bottom: 5%;
 }
-.padding-5{
+.padding--bottom{
+    padding-bottom: 10%;
+}
+
+
+.padding-around-5{
     padding: 5%;
+}
+
+.padding-around-10{
+    padding: 10%;
 }
 
 .no-padding{
     padding: 0;
 }
 
-.scroll-padding-10{
-    scroll-padding-top: -10%;
-}
+/* =========== BACKGROUND ===========*/
 
-
-/* BACKGROUND */
 .white-background{
-    background-color: white;
+    background-color: var(--white);
 }
 
 .sage-background{
     background-color: var(--sage);
 }
 
-
-/* TEXT */
-.small-caps{
-    font-variant: small-caps;
+.grey-backdrop{
+    background-color: #1211119f;
 }
 
-.bold{
-    font-weight: 600;
-}
+/* =========== IMAGES ===========*/
 
-.white{
-    color: white;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.text-end{
-    text-align: end;
-}
-
-a{
-    color: var(--rose);
-    text-decoration: underline;
-}
-
-/* BILDER */
 .img-main{
     height: 75vh;
 }
 
-.hidden{
-    transform: translate(2s);
-    display: none !important;
-}
-
-
-
-/* NAVIGATION */
+/* =========== NAVIGATION ===========*/
 
 nav{
 height: 7vh;
 }
+
 nav a{
     color: var(--dark-green);
     text-decoration: none;
 }
+
 nav a:hover{
     color: var(--dark-green);
     text-decoration-line: underline;
@@ -155,20 +175,25 @@ nav a:hover{
     text-decoration-color: var(--gold);
 }
 
-.fixed-top {
-    z-index: 2;
+
+.mobile-nav{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    border-radius: 5px;
+    z-index: 10;
 }
 
-/* HERO */
 
+
+/* =========== HERO-IMAGE ===========*/
+
+
+/* Muss das hier mit IDs gemacht werden? */
 #hero{
     background-image: url(../assets/img/hero.png);
     background-repeat: no-repeat;
     background-size: 100%;
-}
-
-.img-deko{
-    width: 60%
 }
 
 #brautpaar{
@@ -178,45 +203,66 @@ nav a:hover{
     margin-bottom: -10%;
 }
 
-/* ABLAUF */
+.img-deko{
+    width: 60%
+}
+
+
+
+/* =========== ABLAUF ===========*/
 
 .timeline{
     height: 2px;
-    background-color: white;
     position: relative;
 }
 
 .circle{
-    background-color: white;
+    background-color: var(--white);
     border-radius: 500px;
     width: 20px;
     height: 20px;
 }
 
-#ablauf img{
-    max-height: 12rem;
+.circle-big{
+    background-color: var(--white);
+    border-radius: 500px;
+    border: 2px solid var(--white);
+
+    width: 60px;
+    height: 60px;
+
+    /* Kann ich die Abstände einfacher und einheitlicher gestalten? */
+    margin-bottom: 1rem;
 }
 
-/* ANFAHRT */
+/* =========== FARBEN ===========*/
+
+.circle-wrapper{
+    position: absolute; 
+    top: 19%;
+    left: 50%;
+}
 
 
-/* GESCHENKE */
+/* =========== GESCHENKE ===========*/
 
 #geschenke{
     background-image: url(../assets/img/bg-geschichte.png);
-    background-size: cover;
-    height: 100vh;
+    background-size: auto;
+    background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 
-/* FOOTER */
+/* =========== FOOTER ===========*/
+
 footer{
-    color: white;
+    color: var(--white);
 }
 
 footer a{
-    color: white;
+    color: var(--white);
     cursor: pointer;
     text-decoration: none;
 }
@@ -228,13 +274,17 @@ footer a:hover{
     text-decoration-color: var(--gold);
 }
 
-footer img{
+#footer-background:before{
+    content: url(../assets/img/watercolor-footer.png);
+    display: block;
+    position: absolute;
+    margin-top: 0%;
     width: 100%;
-    margin-top: -5%;
 }
+    /* Beim Footer habe ich kaum noch etwas angepasst, müdi */
 
 
-/* MODAL */
+/* =========== MODAL ===========*/
 
 .overlayer{
     z-index: 3;
@@ -255,7 +305,14 @@ footer img{
     --bs-btn-close-focus-shadow: 0 0 0 0rem rgba(13, 110, 253, 0);
 }
 
+    /* Das ist unfassbar hässlich, alles weg und neu machen
+
+
+
+/* =========== MEDIAQUERIES =========== (Hier war ich auch schon sehr müde... beim nächsten mal genauer checken*/
+
 @media (max-width:770px ){
+
     .hide-mobile{
         display: none;
     } 
@@ -315,6 +372,12 @@ footer img{
         font-size: 1rem;
     }
 
+    .circle-wrapper{
+        position: absolute; 
+        top: 19%;
+        left: 70%;
+    }
+
 }
 
 
@@ -324,3 +387,108 @@ footer img{
         display: none;
     }
 }
+
+
+
+/* =========== ANIMATIONEN ===========*/
+
+/* Basisanimation */
+.animation{
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+    transition: all 2s;
+}
+
+/* Animationen für nth Elemente */
+.animation:nth-child(2){
+    transition-delay: 200ms;
+}
+.animation:nth-child(3){
+    transition-delay: 300ms;
+}
+.animation:nth-child(4){
+    transition-delay: 400ms;
+}
+.animation:nth-child(5){
+    transition-delay: 500ms;
+}
+.animation:nth-child(6){
+    transition-delay: 600ms;
+}
+
+
+/* =========== NOTWENDIGKEIT PRÜFEN ===========*/
+
+.wrapper, html, #ablauf{
+    overflow-x: hidden !important;
+    position: relative;
+    width: 100%;
+}
+#nav-background:after{
+    content: url(../assets/img/bg-navi.png);
+    display: block;
+    position: absolute;
+    margin: -2% -15px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#hero-background:before{
+    content: url(../assets/img/hero-fade.png);
+    display: block;
+    position: absolute;
+    margin-top: -30vh;
+}
+
+html {
+    scroll-padding-top: 35vh;
+  }
+
+.hidden{
+    transition: all 2s;
+    display: none !important;
+}
+
+.z-index-2{
+    z-index: 2;
+}
+
+#ablauf img{
+    max-height: 12rem;
+}
+
+.row{
+    --bs-gutter-x: 0rem;
+}
+
+.togglemodal{
+    position: fixed; 
+    height: 100%; 
+    width: 100%; 
+    top: 0; 
+    left:0; 
+    z-index: 200; 
+}
+
+.togglemodal p{
+    margin-bottom: 0.7rem !important;
+}
+
+
+/* =========== TO-DOs ===========
+- Kreise vereinheitlichen
+- wieso wachsen die Texte
+- Kommentare beachten
+- Kommentare entweder de oder en vereinheitlichen
+- Overlayer neu und hübsch
+- mobile Variante optimieren
+- mobile Navi bauen
+- warum gibt es teilweise noch einen overflow-x?
+- kann ich einige der originalen Stilelemente noch einbringen (z.B. watercolor navi)
+- Bilder nochmal in Höherer Quali rausspeichern
+*/

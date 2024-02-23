@@ -1,0 +1,56 @@
+/* =========== IMAGES ===========*/
+
+.img-main{
+    height: 75vh;
+}
+
+@media (max-width:1200px ){
+    .img-main{
+        height: auto;
+        width: 80%;
+    }
+}
+
+@media (max-width:770px ){
+
+    #brautpaar{
+        margin-bottom: 0%;
+    }
+}
+
+/* =========== GESCHENKE ===========*/
+
+#geschenke{
+    background-image: url(../assets/img/bg-geschichte.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* =========== HERO-IMAGE ===========*/
+
+#hero{
+    background-image: url(../assets/img/hero.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#brautpaar{
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    margin-bottom: -10%;
+}
+
+.img-deko{
+    width: 60%
+}
+
+
+#hero-background:before{
+    content: url(../assets/img/hero-fade.png);
+    display: block;
+    position: absolute;
+    margin-top: -30vh;
+}
